@@ -1,7 +1,6 @@
 require_relative "node"
 require_relative "graph"
 require "pry-byebug"
-require "standard/rake"
 
 class Knight
   attr_accessor :moves
@@ -26,6 +25,6 @@ class Knight
 end
 
 knight = Knight.new
-shortest_path = knight.knight_moves([3, 3], [4, 3])
+shortest_path = knight.knight_moves([7, 0], [7, 4])
 puts "You made it in #{shortest_path.length - 1} moves! Here's your path:"
 shortest_path.each { |coord| print "#{coord}\n" }
