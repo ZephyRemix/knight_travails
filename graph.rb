@@ -2,7 +2,7 @@ require_relative "node"
 
 class Graph
   attr_accessor :root
-  def initialize()
+  def initialize
     # self.root = nil
   end
 
@@ -20,7 +20,6 @@ class Graph
       end
       i += 1
     end
-    return q[i]
+    q[i]
   end
-
 end

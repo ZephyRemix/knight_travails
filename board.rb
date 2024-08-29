@@ -1,5 +1,5 @@
 class Board
   def initialize
-    self.coordinates
+    coordinates
   end
 end
