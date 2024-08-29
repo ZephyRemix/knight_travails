@@ -1,13 +1,8 @@
 class Node
-  attr_accessor :x, :y, :children
+  attr_accessor :coord, :prev
 
-  def initialize(x, y)
-    self.x = x
-    self.y = y
-    self.children = Array.new()
-  end
-
-  def add_child(node)
-    self.children.append(node)
+  def initialize(coord, prev = nil)
+    self.coord = coord
+    self.prev = prev
   end
 end
